@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bomauto.com</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 class="m-0 text-primary text-uppercase">BOMAUTO</h1>
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-7 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                             
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-5 text-end">
+                            <div class="d-inline-flex align-items-center py-2">
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary text-uppercase">BOMAUTO</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link">หน้าแรก</a>                        
+                                <a href="product.html" class="nav-item nav-link ">สินค้า</a>  
+                                <a href="booking.html" class="nav-item nav-link active">การจอง</a>                   
+                                <a href="contact.html" class="nav-item nav-link">ติดต่อเรา</a>
+                            </div>
+                            <a href="login.html" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">ลงชื่อเข้าสู่ระบบเลย<i class="fa fa-arrow-right ms-3"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/background2.jpg);">
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center pb-5">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">การจอง</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+                            <li class="breadcrumb-item"><a href="#">หน้า</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">การจอง</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+       
+        
+        <div class="container">
+        <link href="sty5.css" rel="stylesheet">
+            <h2>จองวันและเวลานำรถเข้าซ่อม</h2>
+            <form action="booking.php" method="POST">
+                <div class="form-group">
+                    <label for="name">ชื่อ:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="service">บริการที่ต้องการ:</label>
+                    <select id="service" name="service" required>
+                        <option value="ตรวจสภาพรถ">ตรวจสภาพรถ</option>
+                        <option value="ซ่อมเบรค">ซ่อมเบรค</option>
+                        <option value="เปลี่ยนยาง">เปลี่ยนยาง</option>
+                        <option value="เปลี่ยนยาง">ถ่ายนำมันเครื่อง</option>
+                        <option value="เปลี่ยนยาง">เปลี่ยนแบตเตอรี่</option>
+                        <option value="เปลี่ยนยาง">บำรุงรักษาระบบปรับอากาศ</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="date">วันที่ต้องการจอง:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="time">เวลาที่ต้องการจอง:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+        
+                <input type="submit" value="จอง">
+                <a href="booking_list.php" class="btn btn-primary py-3 px-5 mt-2">ดูรายละเอียดการจองทั้งหมด</a>
+            </form>
+        </div>
+        
+        <script>
+            // ฟังก์ชันตรวจสอบการล็อกอิน
+            function isLoggedIn() {
+                // ตรวจสอบว่า 'user' ใน localStorage มีอยู่หรือไม่ (แทนที่ด้วยการตรวจสอบของคุณเอง)
+                return localStorage.getItem('user') !== null;
+            }
+        
+            // ฟังก์ชันจัดการการจอง
+            document.querySelector('form').addEventListener('submit', function(event) {
+                if (!isLoggedIn()) {
+                    event.preventDefault(); // ยกเลิกการส่งแบบฟอร์ม
+                    alert('กรุณาล็อกอินก่อนทำการจอง');
+                }
+            });
+        
+            // ฟังก์ชันสำหรับปุ่มดูรายละเอียดการจองทั้งหมด
+            const bookingListButton = document.querySelector('a[href="booking_list.php"]');
+            bookingListButton.addEventListener('click', function(event) {
+                if (!isLoggedIn()) {
+                    event.preventDefault(); // ยกเลิกการไปยังหน้าดูรายละเอียดการจอง
+                    alert('กรุณาล็อกอินก่อนดูรายละเอียดการจองทั้งหมด');
+                }
+            });
+        
+            // ปิดวันที่ก่อนหน้าใน date input
+            const dateInput = document.getElementById('date');
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        
+            // ปิดการใช้งานเวลาที่ผ่านมาใน time input ถ้าวันที่เป็นวันนี้
+            dateInput.addEventListener('change', function() {
+                const timeInput = document.getElementById('time');
+                const selectedDate = new Date(this.value);
+                const currentDate = new Date();
+        
+                if (selectedDate.toDateString() === currentDate.toDateString()) {
+                    const currentTime = currentDate.toTimeString().split(':').slice(0, 2).join(':');
+                    timeInput.setAttribute('min', currentTime);
+                } else {
+                    timeInput.removeAttribute('min');
+                }
+            });
+        </script>
+        
+        
+
+
+        <!-- Service Start -->
+        
+     <!-- ล่างสุด -->
+      
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/background2.jpg);">
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center pb-5">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown"></p1>
+                    <nav aria-label="breadcrumb">
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+ <!-- ล่างสุด -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
